@@ -35,3 +35,14 @@ function getPreviousCaseOfWordTwo(word, words) {
     }
     return word;
 }
+// const list=['hELLo'];
+//console.log(getPreviousCaseOfWordOne('hell'));
+//console.log(getPreviousCaseOfWordOne('hELl'));
+
+// console.log(getPreviousCaseOfWordTwo('hi',['a','hi','me']));
+
+module.exports={
+    getPreviousCaseOfWordOne,
+    getPreviousCaseOfWordTwo
+
+};

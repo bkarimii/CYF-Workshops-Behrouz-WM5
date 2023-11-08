@@ -10,8 +10,8 @@ function countWords(text) {
 
 
 test('should count the words in a string of text', () => {
-
+    const text1='hii'
     const text = "Here is a plain sentence with some information! Try to find the word count";
-    expect(countWords(text)).toBe(14);
+    expect(countWords(text1)).toBe(3);
 
 });

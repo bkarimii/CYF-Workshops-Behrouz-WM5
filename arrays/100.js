@@ -8,3 +8,4 @@ const result = cities.push("Liverpool","Sheffield");
 
 console.log(`The result is ${result}`);
 console.log("cities now looks like this: ",cities);
+
