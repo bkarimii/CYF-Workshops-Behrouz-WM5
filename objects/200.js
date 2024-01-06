@@ -5,10 +5,10 @@
 
 const person = {
     "name": "Jemima",
-    "location",
-    "id_number" = 9,
+    "location":'Glasgow',
+    "id_number" :9,
 };
 
-console.assert(person.name === "Jemima");
-console.assert(person.location === "Glasgow");
-console.assert(person.id_number === 9);
+console.assert(person.name === "Jemima",'Name is not correct');
+console.assert(person.location === "Glasgow", 'city is not correct');
+console.assert(person.id_number === 9,'id_number is not correct');
