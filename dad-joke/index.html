@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -9,14 +10,40 @@
       crossorigin="anonymous"
     />
 
+=======
+>>>>>>> 27baf001ad03b8cf2bb21b58ad5de00a01ced1da
     <title>Joke Generator</title>
   </head>
   <body>
     <h1>Get a Random Joke</h1>
     <p id="joke">Loading...</p>
+<<<<<<< HEAD
     <p></p>
 
     <button id="button">Get new joke</button>
     <script src="script.js"></script>
+=======
+
+    <button>Get new joke</button>
+
+    <script>
+      async function getJoke() {
+        fetch("https://icanhazdadjoke.com/", {
+          headers: {
+            Accept: "application/json",
+          },
+        }).then((data) => {
+          console.log(data.json());
+        });
+        console.log(response, "<---- should see response");
+      }
+
+      getJoke().then((joke) => {
+        console.log(joke, "<--- joke");
+        document.getElementById("joke").textContent = data.joke;
+      });
+      button.addEventListener("click", getJoke);
+    </script>
+>>>>>>> 27baf001ad03b8cf2bb21b58ad5de00a01ced1da
   </body>
 </html>
